@@ -2,3 +2,4 @@ data/bg_images.npy filter=lfs diff=lfs merge=lfs -text
 data/ShapeNet1D.tar.xz filter=lfs diff=lfs merge=lfs -text
 data/ShapeNet3D_azi180ele30.tar.xz filter=lfs diff=lfs merge=lfs -text
 data/models.tar.xz filter=lfs diff=lfs merge=lfs -text
+data/distractor.tar.xz filter=lfs diff=lfs merge=lfs -text
