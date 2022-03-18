@@ -1,0 +1,13 @@
+torch==1.7.0
+torchvision==0.8.1
+numpy
+imgaug
+matplotlib
+sklearn
+PyYAML
+einops
+torchmeta
+transforms3d
+tensorboard
+pytorch_metric_learning
+

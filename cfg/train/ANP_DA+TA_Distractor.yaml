@@ -1,0 +1,22 @@
+{
+    "method": "ANPDistractor",
+    "checkpoint": "",
+    "task": "distractor",  # ["shapenet_3d", "bars" ,"distractor", "pascal_1d"]
+    "aug_list": ["data_aug", "task_aug"],  # choose from ["MR", "data_aug", "task_aug", "azimuth_only"]
+    "agg_mode": "attention",  # aggregation for latent representation, ['attention', 'mean', 'max', 'baco']
+    "img_agg": "max",  # aggregation over CNN feature maps ['mean', 'max', 'baco', 'reshape']
+    "loss_type": "mse",
+    "dim_w": 16,  # dim used to transform label in distractor
+    "tasks_per_batch": 20,  # number of minibatch, default 20
+    "max_ctx_num": 15,  # Number of context points, default 15
+    "noise_scale": 0.00,
+    "weight_decay": False,
+    "lr": 0.0001,
+    "optimizer": "Adam",
+    "bg_gen_freq": 1000,
+    "val_freq": 1000,  # default 1000
+    "val_iters": 50,  # default 50
+    "iterations": 500000,
+    "device": "cuda:0",
+    "seed": 2578,
+}

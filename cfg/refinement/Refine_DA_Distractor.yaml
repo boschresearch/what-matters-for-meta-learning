@@ -1,0 +1,23 @@
+{
+    "method": "SingleTaskDistractor",
+    "mode": "refinement",
+    "checkpoint": "results/train/SingleTaskDistractor/2021-09-28_08-36-26_distractor_datasize_None__maxmse_['data_aug', 'task_aug']_seed_2578/models/model_intermediate.pt",
+    "task": "distractor",  # ["shapenet_3d", "bars" ,"distractor", "pascal_1d"]
+    "aug_list": ["data_aug"],  # choose from ["MR", "data_aug", "task_aug", "azimuth_only"]
+    "agg_mode": "",  # aggregation for latent representation, ['attention', 'mean', 'max', 'baco']
+    "img_agg": "max",  # aggregation over CNN feature maps ['mean', 'max', 'baco', 'reshape']
+    "loss_type": "mse",
+    "dim_w": 16,  # dim used to transform label in distractor
+    "tasks_per_batch": 1,  # number of minibatch
+    "max_ctx_num": 25,  # Number of context points
+    "noise_scale": 0.00,
+    "weight_decay": False,
+    "lr": 0.0001,
+    "optimizer": "Adam",
+    "bg_gen_freq": 1000,
+    "val_freq": 2,
+    "val_iters": 30,
+    "iterations": 20000,
+    "device": "cuda:0",
+    "seed": 2578,
+}

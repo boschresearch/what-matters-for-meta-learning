@@ -1,0 +1,22 @@
+{
+    "method": "ANPMRShapeNet3D",
+    "checkpoint": "",
+    "task": "shapenet_3d",  # ["shapenet_3d", "bars" ,"distractor", "pascal_1d, shapenet_1d"]
+    "aug_list": [],  # choose from ["MR", "data_aug", "task_aug"]
+    "agg_mode": "attention",  # aggregation for latent representation, ['attention', 'mean', 'max', 'baco']
+    "img_agg": "reshape",  # aggregation over CNN feature maps ['mean', 'max', 'baco', 'reshape']
+    "loss_type": "mse",
+    "tasks_per_batch": 20,  # number of minibatch
+    "max_ctx_num": 15,  # Number of context points
+    "noise_scale": 0.00,
+    "weight_decay": False,
+    "lr": 0.0001,
+    "beta": 0.0000001,
+    "optimizer": "Adam",
+    "bg_gen_freq": 1000,
+    "val_freq": 200,
+    "val_iters": 100,
+    "iterations": 500000,
+    "device": "cuda:0",
+    "seed": 2578,
+}

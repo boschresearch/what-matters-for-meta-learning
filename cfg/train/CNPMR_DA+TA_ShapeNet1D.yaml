@@ -1,0 +1,27 @@
+{
+    "method": "CNPMRShapeNet1D",
+    "checkpoint": "",
+    "data_size": "large",  # ["small", "middle" or "large"]
+    "task": "shapenet_1d",  # ["shapenet_3d", "shapenet_1d", "bars" ,"distractor", "pascal_1d"]
+    "aug_list": ["data_aug", "task_aug"],  # choose from ["MR", "data_aug", "task_aug"]
+    "agg_mode": "max",  # aggregation for latent representation, ['attention', 'mean', 'max', 'baco']
+    "img_agg": "",  # aggregation over CNN feature maps ['mean', 'max', 'baco', 'reshape']
+    "loss_type": "mse",
+    "tasks_per_batch": 10,  # number of minibatch
+    "max_ctx_num": 15,  # Number of context points
+    "dim_w": 64,
+    "n_hidden_units_r": [100, 100],
+    "dim_r": 100,
+    "dim_z": 64,
+    "noise_scale": 0.00,
+    "weight_decay": False,
+    "lr": 0.0001,
+    "beta": 0.0000001,
+    "optimizer": "Adam",
+    "bg_gen_freq": 1000,
+    "val_freq": 50,
+    "val_iters": 10,
+    "iterations": 500000,
+    "device": "cuda:0",
+    "seed": 2578,
+}

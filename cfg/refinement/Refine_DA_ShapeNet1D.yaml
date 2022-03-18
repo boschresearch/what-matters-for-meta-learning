@@ -1,0 +1,27 @@
+{
+    "method": "SingleTaskShapeNet1D",
+    "mode": "refinement",
+    "checkpoint": "results/train/SingleTaskShapeNet1D/2022-03-06_10-50-26_shapenet_1d_datasize_large__mse_['task_aug', 'data_aug']_seed_2578/models/best_test_model.pt",
+    "data_size": "large",  # ["small", "middle" or "large"]
+    "task": "shapenet_1d",  # ["shapenet_3d", "bars" ,"distractor", "pascal_1d, shapenet_1d"]
+    "aug_list": ["data_aug"],  # single task cannot add task_aug, only data_aug possible
+    "agg_mode": "",  # aggregation for latent representation, ['attention', 'mean', 'max', 'baco']
+    "img_agg": "",  # aggregation over CNN feature maps ['mean', 'max', 'baco', 'reshape']
+    "loss_type": "mse",
+    "tasks_per_batch": 1,  # number of minibatch
+    "max_ctx_num": 25,  # Number of context points
+    "dim_w": 64,
+    "n_hidden_units_r": [100, 100],
+    "dim_r": 64,
+    "dim_z": 64,
+    "noise_scale": 0.00,
+    "weight_decay": False,
+    "lr": 0.0001,
+    "optimizer": "Adam",
+    "bg_gen_freq": 1000,
+    "val_freq": 50,
+    "val_iters": 30,
+    "iterations": 20000,
+    "device": "cuda:0",
+    "seed": 2578,
+}

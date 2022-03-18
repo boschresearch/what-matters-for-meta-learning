@@ -1,0 +1,26 @@
+{
+    "method": "VanillaMAML",
+    "checkpoint": "",
+    "task": "pascal_1d",  # ["shapenet_3d", "bars" ,"distractor", "pascal_1d"]
+    "aug_list": ["task_aug", "data_aug"],  # choose from ["MR", "data_aug", "task_aug", "azimuth_only"]
+    "loss_type": "mse",
+    "tasks_per_batch": 10,  # number of minibatch
+    "max_ctx_num": 15,  # number of examples used for inner-loop
+    "num_updates": 5,  # number of inner gradient updates during training
+    "test_num_updates": 20,  # number of inner gradient updates during test
+    "dim_w": 196,
+    "num_filters": 64,  # dim_hidden for MAML
+    "noise_scale": 0.00,
+    "weight_decay": False,  # whether or not using weight decay
+    "beta": 0.001,  # 'the beta for weight decay'
+    "first_order": False,
+    "lr": 0.0005,  # base learning rate of the generator, denote also as "meta_lr"
+    "update_lr": 0.002,  # learning rate for inner gradient update
+    "optimizer": "Adam",
+    "bg_gen_freq": 1000,
+    "val_freq": 50,
+    "val_iters": 10,
+    "iterations": 50000,
+    "device": "cuda:0",
+    "seed": 2578,
+}
