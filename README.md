@@ -44,7 +44,7 @@ evaluate and visualize predictions on distractor task:
 ```shell
 python evaluate_and_plot_distractor.py --config cfg/evaluation/eval_and_plot/${config file}
 ```
-evaluetate and visualize on ShapeNet1D:
+evaluate and visualize on ShapeNet1D:
 ```shell
 python evaluate_and_plot_shapenet1d.py --config cfg/evaluation/eval_and_plot/${config file}
 ```
@@ -52,10 +52,8 @@ evaluate and visualize predictions on ShapeNet3D:
 ```shell
 python evaluate_and_plot_shapenet3d.py --config cfg/evaluation/eval_and_plot/${config file}
 ```
-Prediction vs context set size on novel tasks:
+statistical evaluation on novel tasks:
 ```shell
-python evaluation.py --config --config cfg/evaluation/${config file}
-python evaluation.py --config cfg/evaluation/${config file}
 python evaluation.py --config cfg/evaluation/${config file}
 ```
 ### Training
