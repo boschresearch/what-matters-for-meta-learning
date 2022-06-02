@@ -23,7 +23,7 @@ This software is a research prototype, solely developed for and published as par
   pip install -r requirements.txt
 ```
 ### Datasets
-Extract Distractor, ShapeNet1D, ShapeNet3D datasets and background images used for ShapeNet3D from `data/`, for original Pascal1D data from [here](https://drive.google.com/drive/folders/1IWlmBLq7siaKYOy6YLoHxdGS5wZaulY0). Extract all datasets under `data/`, datafolder should be structured as:
+Extract Distractor, ShapeNet1D, ShapeNet3D datasets and background images used for ShapeNet3D from `data/`, Pascal1D dataset can be generated following prior work [Meta-Learning without Memorization](https://github.com/google-research/google-research/tree/ccc94ce348360ddcd41c749d4088d468ccfd1eaf/meta_learning_without_memorization). Extract all datasets under `data/`, datafolder should be structured as:
 ```shell
 data/
 ├── distractor/
