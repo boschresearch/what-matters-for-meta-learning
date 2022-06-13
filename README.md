@@ -1,7 +1,7 @@
 # What Matters For Meta-Learning Vision Regression Tasks?
 This is the official code for the paper "What Matters For Meta-Learning Vision Regression Tasks?" by Ning Gao et al. accepted to CVPR 2022. The code allows the users to reproduce and extend the results reported in the study. Please cite the above paper when reporting, reproducing or extending the results.
 
-[[Arxiv](https://arxiv.org/abs/2203.04905)]
+[[Arxiv](https://arxiv.org/abs/2203.04905)] [[CVPR22'](https://openaccess.thecvf.com/content/CVPR2022/html/Gao_What_Matters_for_Meta-Learning_Vision_Regression_Tasks_CVPR_2022_paper.html)]
 
 ## Purpose of the project
 
@@ -77,11 +77,13 @@ Adapt the load model path in config file and run:
 If you use this work please cite
 ```
 @InProceedings{Gao_2022_CVPR,
-  author={Gao, Ning and Ziesche, Hanna Carolin and Anh Vien, Ngo and Volpp, Michael and Neumann, Gerhard},
-  title={What Matters For Meta-Learning Vision Regression Tasks?},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2022}
-}   
+    author    = {Gao, Ning and Ziesche, Hanna and Vien, Ngo Anh and Volpp, Michael and Neumann, Gerhard},
+    title     = {What Matters for Meta-Learning Vision Regression Tasks?},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {14776-14786}
+}
 ```
 
 ## License
